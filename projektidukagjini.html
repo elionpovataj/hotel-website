@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Dukagjini | Pejë</title>
+    <style>
+        /* === RESET & BASE === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* === HEADER / NAV === */
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.8em;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* === HERO SECTION === */
+        .hero {
+            background: url("hoteldukagjini1.webp") center/cover no-repeat;
+            height: 420px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            background: rgba(0,0,0,0.4);
+            padding: 15px 30px;
+            border-radius: 8px;
+        }
+
+        /* === ABOUT SECTION === */
+        .about {
+            text-align: center;
+            padding: 50px 100px;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        /* === GALLERY SECTION === */
+        .section-title {
+            text-align: center;
+            font-size: 2em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #003366;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 0 30px 50px 30px;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* === BOOKING FORM === */
+        .booking {
+            background: #e9eef3;
+            padding: 40px;
+            text-align: center;
+        }
+
+        fieldset {
+            display: inline-block;
+            padding: 25px;
+            border: 2px solid #003366;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        legend {
+            color: #003366;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #003366;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 15px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0055aa;
+        }
+
+        /* === CONTACT SECTION === */
+        .contact {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .contact address {
+            font-style: normal;
+            margin-top: 10px;
+        }
+
+        /* === FOOTER === */
+        footer {
+            background-color: #002244;
+            color: #ccc;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- === HEADER === -->
+    <header>
+        <h1>Hotel Dukagjini</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Rreth Nesh</a></li>
+                <li><a href="#rooms">Dhoma</a></li>
+                <li><a href="#restaurant">Restoranti</a></li>
+                <li><a href="#booking">Rezervo</a></li>
+                <li><a href="#contact">Kontakti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- === HERO SECTION === -->
+    <section class="hero">
+        <h2>Mirë se vini në Hotel Dukagjini, Pejë</h2>
+    </section>
+
+    <!-- === ABOUT === -->
+    <section id="about" class="about">
+        <h2 class="section-title">Rreth Hotelit</h2>
+        <p>
+            I vendosur në zemër të Pejës, Hotel Dukagjini ofron komoditet, luks dhe shërbim të jashtëzakonshëm.
+            Me pamje mahnitëse drejt maleve të Rugovës, dhomat moderne dhe restoranti ynë elegant e bëjnë qëndrimin tuaj të paharrueshëm.
+            Pavarësisht nëse jeni në udhëtim pune apo pushime, ne kujdesemi për çdo detaj.
+        </p>
+    </section>
+
+    <!-- === ROOMS GALLERY === -->
+    <section id="rooms">
+        <h2 class="section-title">Dhoma & Akomodimi</h2>
+        <div class="gallery">
+            <img src="hoteldukagjini1.webp" alt="Dhoma 1">
+            <img src="hoteldukagjini2.webp" alt="Dhoma 2">
+            <img src="hoteldukagjini3.jpg" alt="Dhoma 3">
+            <img src="hoteldukagjini4.webp" alt="Dhoma 4">
+        </div>
+    </section>
+
+    <!-- === RESTAURANT === -->
+    <section id="restaurant">
+        <h2 class="section-title">Restoranti Dukagjini</h2>
+        <div class="gallery">
+            <img src="restaurant1.jpg" alt="Restoranti Dukagjini">
+            <img src="restaurant2.jpg" alt="Restoranti Dukagjini">
+            <img src="restaurant3.webp" alt="Restoranti Dukagjini">
+            <img src="restaurant4.webp" alt="Restoranti Dukagjini">
+        </div>
+    </section>
+
+    <!-- === BOOKING FORM === -->
+    <section id="booking" class="booking">
+        <h2 class="section-title">Rezervoni Qëndrimin Tuaj</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Detajet e Rezervimit</legend>
+
+                <label for="destination">Destinacioni</label>
+                <input type="text" id="destination" name="destination" value="Pejë">
+
+                <label for="check_in">Check-in</label>
+                <input type="date" id="check_in" name="check_in">
+
+                <label for="check_out">Check-out</label>
+                <input type="date" id="check_out" name="check_out">
+
+                <label for="adults">Të rritur</label>
+                <select id="adults" name="adults">
+                    <option value="1">1 i rritur</option>
+                    <option value="2">2 të rritur</option>
+                    <option value="3">3 të rritur</option>
+                    <option value="4">4 të rritur</option>
+                </select>
+
+                <label for="children">Fëmijët</label>
+                <select id="children" name="children">
+                    <option value="0">Asnjë</option>
+                    <option value="1">1 fëmijë</option>
+                    <option value="2">2 fëmijë</option>
+                    <option value="3">3 fëmijë</option>
+                </select>
+
+                <input type="submit" value="Konfirmo Rezervimin">
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- === CONTACT === -->
+    <section id="contact" class="contact">
+        <h2>Na Kontaktoni</h2>
+        <p>📞 +383 39 410 177 &nbsp;&nbsp; | &nbsp;&nbsp; ✉️ www.hoteldukagjini.com</p>
+        <address>📍 M75Q+M38, Square of Martyrs, M9, Pejë 30000, Kosovë</address>
+    </section>
+
+    <!-- === FOOTER === -->
+    <footer>
+        &copy; 2025 Hotel Dukagjini | Të gjitha të drejtat e rezervuara.
+    </footer>
+
+</body>
+</html>

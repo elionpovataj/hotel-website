@@ -1,0 +1,44 @@
+<!-- booking.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmimi i Rezervimit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .confirmation {
+            border: 1px solid #ccc;
+            padding: 20px;
+            max-width: 500px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Faleminderit për rezervimin!</h1>
+    <div class="confirmation">
+        <h2>Detajet e rezervimit:</h2>
+        <p><strong>Destinacioni:</strong> <span id="destination"></span></p>
+        <p><strong>Check-in:</strong> <span id="check_in"></span></p>
+        <p><strong>Check-out:</strong> <span id="check_out"></span></p>
+        <p><strong>Numri i të rriturve:</strong> <span id="adults"></span></p>
+        <p><strong>Numri i fëmijëve:</strong> <span id="children"></span></p>
+    </div>
+
+    <script>
+        // Get query parameters from URL
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById("destination").textContent = params.get("destination") || "N/A";
+        document.getElementById("check_in").textContent = params.get("check_in") || "N/A";
+        document.getElementById("check_out").textContent = params.get("check_out") || "N/A";
+        document.getElementById("adults").textContent = params.get("adults") || "N/A";
+        document.getElementById("children").textContent = params.get("children") || "N/A";
+    </script>
+
+</body>
+</html>
