@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Kosovo</title>
+  <style>
+    /* --- GLOBAL STYLES --- */
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+      color: #222;
+    }
+
+    header {
+      background-color: #002b5c;
+      color: white;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      padding: 15px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    section {
+      padding: 100px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #002b5c;
+    }
+
+    /* --- HERO SECTION --- */
+    #home {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('') center/cover no-repeat;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    #home h1 {
+      font-size: 3em;
+    }
+
+    .btn {
+      background-color: #ffcc00;
+      color: #002b5c;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #002b5c;
+      color: white;
+    }
+
+    /* --- ABOUT --- */
+    #about img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    /* --- CULTURE --- */
+    .culture-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .culture-item {
+      flex: 1 1 calc(50% - 20px);
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    /* --- TOURISM --- */
+    .tourism-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .tourism-item {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .tourism-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .tourism-item h3 {
+      margin: 10px;
+      color: #002b5c;
+    }
+
+    /* --- GALLERY --- */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* --- CONTACT --- */
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+
+    button {
+      background-color: #002b5c;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #004080;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+      background-color: #002b5c;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 700px) {
+      .culture-item { flex: 1 1 100%; }
+      nav { flex-wrap: wrap; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#culture">Culture</a>
+      <a href="#tourism">Tourism</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home">
+    <h1>Welcome to Kosovo</h1>
+    <p>The heart of the Balkans — discover its beauty, culture, and spirit.</p>
+    <a href="#about" class="btn">Start Exploring</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Kosovo</h2>
+    <p>Kosovo is a small, landlocked country in Southeast Europe, located in the central Balkans. Its capital, Pristina, is known for its vibrant café culture, youthful energy, and rich history. Kosovo declared independence in 2008 and continues to grow as a modern European destination.</p>
+    <img src="Flag_of_Kosovo.svg.png" alt="Pristina City">
+  </section>
+
+  <!-- CULTURE -->
+  <section id="culture">
+    <h2>Kosovo’s Culture</h2>
+    <div class="culture-box">
+      <div class="culture-item">
+        <h3>Tradition & Folklore</h3>
+        <p>Kosovo’s traditional music, dance, and costumes reflect its deep roots in Albanian and Balkan culture. Festivals often feature folk songs, dancing, and colorful attire.</p>
+      </div>
+      <div class="culture-item">
+        <h3>Art & Modern Identity</h3>
+        <p>Contemporary art and film have thrived in Kosovo. The annual Dokufest in Prizren is one of Southeast Europe’s most famous documentary film festivals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOURISM -->
+  <section id="tourism">
+    <h2>Top Tourism Spots</h2>
+    <div class="tourism-grid">
+      <div class="tourism-item">
+        <img src="prizren-kosovo-travel-photo-20230416143903166-main-image-960x853.jpg" alt="Prizren">
+        <h3>Prizren</h3>
+      </div>
+      <div class="tourism-item">
+        <img src="variant.jpg" alt="Rugova Canyon">
+        <h3>Rugova Canyon</h3>
+      </div>
+      <div class="tourism-item">
+        <img src="bazar.jpg" alt="Gjakova Bazaar">
+        <h3>Gjakova Old Bazaar</h3>
+      </div>
+      <div class="tourism-item">
+        <img src="germia-park.webp" alt="Germia Park">
+        <h3>Germia Park</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <img src="manastir-Visoki-Decani-2.jpg" alt="manastiry">
+      <img src="wallpaper-mountains-backgrounds-walenstadtberg-category-21558.webp" alt="Mountains">
+      <img src="prishtina.jpg" alt="Prishtina Night">
+      <img src="tas_kopru.jpg" alt="Prizren Bridge">
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label>Name:</label>
+      <input type="text" id="name" required>
+
+      <label>Email:</label>
+      <input type="email" id="email" required>
+
+      <label>Message:</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+      <p id="response"></p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Explore Kosovo | Built with ❤️ in HTML</p>
+  </footer>
+
+  <script>
+    // Simple contact form
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      document.getElementById('response').textContent = `Thank you, ${name}! We'll get back to you soon.`;
+      this.reset();
+    });
+
+    // Smooth navbar highlight
+    const navLinks = document.querySelectorAll('nav a');
+    window.addEventListener('scroll', () => {
+      let fromTop = window.scrollY + 150;
+      navLinks.forEach(link => {
+        let section = document.querySelector(link.hash);
+        if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+          link.style.color = '#ffcc00';
+        } else {
+          link.style.color = 'white';
+        }
+      });
+    });
+  </script>
+
+<body>
+</html>

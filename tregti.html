@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AutoMarket Elioni - Makina të reja dhe të përdorura për shitje. Mercedes, BMW, Audi, Range Rover dhe më shumë.">
+    <meta name="keywords" content="makina, automjete, shitje, automarket, elion, mercedes, bmw, audi, range rover, m5">
+    <title>AutoMarket Elioni - Makina në shitje</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #111827, #1e293b);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 { font-size: 2.2em; margin-bottom: 8px; }
+        header p { color: #9ca3af; font-size: 1.1em; }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 320px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info { padding: 20px; }
+        .product-info h2 { color: #1f2937; margin-bottom: 10px; }
+        .product-info p { margin: 6px 0; font-size: 15px; }
+        .price { font-size: 20px; color: #2563eb; font-weight: bold; margin-top: 10px; }
+
+        .btn {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 12px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover { background-color: #1d4ed8; }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111827;
+            color: #9ca3af;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            main { flex-direction: column; align-items: center; }
+            .product-card { max-width: 90%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AutoMarket Elioni</h1>
+        <p>Makina të reja dhe të përdorura në shitje - Cilësi dhe besueshmëri</p>
+    </header>
+
+    <main>
+
+        <!-- Mercedes-Benz -->
+        <div class="product-card">
+            <img src="2021-mercedes-benz-s580.jpg" alt="Mercedes-Benz 2022">
+            <div class="product-info">
+                <h2>Mercedes-Benz S-Class 2022</h2>
+                <p><strong>Gjendje:</strong> Sapo ardhur nga Gjermania</p>
+                <p><strong>Kilometra:</strong> 50,000 km</p>
+                <p><strong>Motorr:</strong> 4.4L Biturbo - 800hp</p>
+                <p><strong>Opsione:</strong> Full AMG Line</p>
+                <p class="price">€89,000</p>
+                <a href="mailto:elionpovatajj@gmail.com" class="btn">Kontakto shitësin</a>
+            </div>
+        </div>
+
+        <!-- BMW M5 Competition -->
+        <div class="product-card">
+            <img src="Used-2021-BMW-M5-Competition.jpg" alt="BMW M5 2021">
+            <div class="product-info">
+                <h2>BMW M5 Competition 2021</h2>
+                <p><strong>Gjendje:</strong> Super e pastër</p>
+                <p><strong>Kilometra:</strong> 62,000 km</p>
+                <p><strong>Motorr:</strong> 4.4L V8 Twin-Turbo - 625hp</p>
+                <p><strong>Opsione:</strong> M-Sport Package, Sedilje sportive</p>
+                <p class="price">€78,500</p>
+                <a href="mailto:elionpovatajj@gmail.com" class="btn">Kontakto shitësin</a>
+            </div>
+        </div>
+
+        <!-- Audi RS7 -->
+        <div class="product-card">
+            <img src="Audi RS7 Sportback 2020.jpg" alt="Audi RS7 2020">
+            <div class="product-info">
+                <h2>Audi RS7 Sportback 2020</h2>
+                <p><strong>Gjendje:</strong> Ekstra e mirëmbajtur</p>
+                <p><strong>Kilometra:</strong> 70,000 km</p>
+                <p><strong>Motorr:</strong> 4.0L V8 TFSI - 600hp</p>
+                <p><strong>Opsione:</strong> Bang & Olufsen, Night Vision</p>
+                <p class="price">€84,900</p>
+                <a href="mailto:elionpovatajj@gmail.com" class="btn">Kontakto shitësin</a>
+            </div>
+        </div>
+
+        <!-- Range Rover -->
+        <div class="product-card">
+            <img src="Range Rover Vogue 2022.jpg" alt="Range Rover 2022">
+            <div class="product-info">
+                <h2>Range Rover Vogue 2022</h2>
+                <p><strong>Gjendje:</strong> Luksoze, 1 pronar</p>
+                <p><strong>Kilometra:</strong> 30,000 km</p>
+                <p><strong>Motorr:</strong> 3.0L Diesel - 350hp</p>
+                <p><strong>Opsione:</strong> Full Black Edition</p>
+                <p class="price">€95,000</p>
+                <a href="mailto:elionpovatajj@gmail.com" class="btn">Kontakto shitësin</a>
+            </div>
+        </div>
+
+        <!-- BMW F10 M5 -->
+        <div class="product-card">
+            <img src="BMW M5 F10 2016.JPG" alt="BMW F10 M5 2016">
+            <div class="product-info">
+                <h2>BMW M5 F10 2016</h2>
+                <p><strong>Gjendje:</strong> Perfekte, mirëmbajtur rregullisht</p>
+                <p><strong>Kilometra:</strong> 98,000 km</p>
+                <p><strong>Motorr:</strong> 4.4L V8 Twin-Turbo - 560hp</p>
+                <p><strong>Opsione:</strong> Harman Kardon, M Performance Exhaust</p>
+                <p class="price">€47,900</p>
+                <a href="a href="# class="btn contact-btn">Kontakto shitësin</a>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AutoMarket Elioni. Të gjitha të drejtat e rezervuara.</p>
+    </footer>
+
+</body>
+<script>
+  document.querySelectorAll('.contact-btn').forEach(button => {
+    button.addEventListener('click', function(event) {
+      event.preventDefault(); // parandalon linkun default
+      alert("Na ndiqni në Instagram: @elionpovatajj");
+    });
+  });
+</script>
+
+</html>
