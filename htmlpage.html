@@ -3,20 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
   <title>Faqja ime e thjesht</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff00;
+      <body
+      bg-black
       color: #333;
       text-align: center;
       margin: 0;
-      padding: 50px;
-    }
-    h1 {
+      padding: 50px
+  
       color: #000000;
-    }
-    button {
+    bnutto 
       background-color: #0078d7;
       color: rgb(255, 255, 255);
       border: none;
@@ -24,15 +23,16 @@
       border-radius: 5px;
       cursor: pointer;
       font-size: 16px;
-    }
-    button:hover {
+    
       background-color: #8fd1d1;
-    }
+  
+
+
   </style>
 </head>
 <body>
   <h1>Nese doni ti mesoni te gjitha kodet, per tu bere milioner duhet te klikoni 'Click me'!</h1>
   <p>Kjo faqe kushton vetem 1euro! Ju faleminderit.</p>
-  <button onclick="alert('Ju nuk keni kredi te mjaftushme! Ju lutem mbusheni llogarin para se tjav fshim te gjithe llogarin')">Click Me</button>
+  <button class="btn-small px-12 " onclick="alert('Ju nuk keni kredi te mjaftushme! Ju lutem mbusheni llogarin para se tjav fshim te gjithe llogarin')">Click Me</button>
 </body>
 </html>
