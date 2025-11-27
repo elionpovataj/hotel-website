@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Tailwind Project</title>
+  </head>
+
+  <body class="bg-gray-100 text-gray-900">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-blue-600">MyProject</h1>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-8 text-lg">
+          <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+          <li><a href="#features" class="hover:text-blue-600">Features</a></li>
+          <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+
+        <!-- Mobile menu button -->
+        <button id="menuBtn" class="md:hidden text-3xl">☰</button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden md:hidden bg-white px-6 pb-4">
+        <a class="block py-2" href="index.html">Home</a>
+        <a class="block py-2" href="#features">Features</a>
+        <a class="block py-2" href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="pt-32 text-center px-6">
+      <h1 class="text-5xl font-extrabold mb-4">
+        Build Websites <span class="text-blue-600">Faster</span> with Tailwind
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">
+        A modern UI framework that helps you create beautiful websites easily.
+      </p>
+      <a href="#features"
+        class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700">
+        Explore Features
+      </a>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section id="features" class="mt-24 max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-10">Our Features</h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-2xl font-semibold mb-3">⚡ Fast Development</h3>
+          <p class="text-gray-600">Tailwind speeds up your workflow with utility classes.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-2xl font-semibold mb-3">🎨 Customizable</h3>
+          <p class="text-gray-600">Easily create custome themes and components.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-2xl font-semibold mb-3">📱 Fully Responsive</h3>
+          <p class="text-gray-600">Works perfectly on every screen size.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-24 bg-gray-900 text-white py-8 text-center">
+      <p>&copy; 2025 MyProject — All Rights Reserved</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/script.js"></script>
+  </body>
+</html>
